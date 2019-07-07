@@ -1,3 +1,5 @@
+var imageDataArray = [];
+var canvasCount = 35;
 
 function thanosGone(selector){
 
