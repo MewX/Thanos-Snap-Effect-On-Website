@@ -13,8 +13,18 @@
 </head>
 <body>
 <div class="content">
-    <img src="abc.jpg" height="600">
-    <button id="start-btn" onclick="thanosGone('.content')">Snap!</button>
+    <div height="600">
+        <div id="thisimg" height="600">
+            <img src="abc.jpg" height="600">
+        </div>
+    </div>
+    <div height="600">
+        <div id="thatimg" height="600">
+            <img src="abc.jpg" height="600">
+        </div>
+    </div>
+    <button class="btn" onclick="thanosGone('#thisimg')">Snap this!</button>
+    <button class="btn" onclick="thanosGone('#thatimg')">Snap that!</button>
 </div>
 </body>
 </html>

@@ -19,9 +19,9 @@ function thanosGone(selector){
         for (let i = 0; i < canvasCount; i++) {
             let c = newCanvasFromImageData(imageDataArray[i], canvas.width, canvas.height);
             c.classList.add("dust");
-            $("body").append(c);
+            $(selector).parent().append(c);
         }
-        $(selector).children().not(".dust").fadeOut(3500);
+        $(selector).not(".dust").fadeOut(3500);
         $(".dust").each( function(index){
             animateBlur($(this),0.8,800);
             setTimeout(() => {
